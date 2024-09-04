@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+header{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+main, header{
+    width:350px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+main {
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    
+}
+
+main input{
+    width: 200px;
+    padding: 5px 5px;
+    margin-top: 10px;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    
+}
+
+
+main button{
+    width: 60px;
+    height: 28px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+}
+
+main button:hover{
+    cursor: pointer;
+    border: 0.5px solid rgb(27, 105, 119);
+}
+
+button[class="again"]{
+    margin-bottom: 10px;
+}
+
