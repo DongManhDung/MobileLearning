@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "vietColorText": "bạc",
+        "color": "#C5F1FB",
+        "img": "require(../assets/img/Lab03/vs_silver.png)"
+    },
+    {
+        "id": 2,
+        "vietColorText": "đỏ",
+        "color": "#F30D0D",
+        "img": "require(../assets/img/Lab03/vs_red.png)"
+    },
+    {
+        "id": 3,
+        "vietColorText": "đen",
+        "color": "#000000",
+        "img": "require(../assets/img/Lab03/vs_black.png)"
+    },
+    {
+        "id": 4,
+        "vietColorText": "xanh",
+        "color": "#234896",
+        "img": "require(../assets/img/Lab03/vs_blue.png)"
+    }
+
+]
