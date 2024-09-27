@@ -3,6 +3,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
 // Lab01
@@ -25,7 +27,16 @@ import Screen4 from '../Tuan3_10ReactNative/Lab02/Screen4.js';
 import Lab03Screen1 from './Lab03/Lab03Screen1.js';
 import Lab03Screen2 from './Lab03/Lab03Screen2.js';
 
+// Lab04
+import Chat from './Lab04/Chat.js';
+import Products from './Lab04/Products.js';
 
+// Lab05
+import Screen01 from './Lab05/Screen01.js';
+import Screen02 from './Lab05/Screen02.js';
+import Screen03 from './Lab05/Screen03.js';
+
+const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -47,12 +58,36 @@ export default function App() {
     // {/* <Screen4></Screen4> */}
 
     //  {/* This is exercise Lab03 */}
-     <NavigationContainer initialRouteName="Lab03Screen1">
-            <Stack.Navigator>     
-                <Stack.Screen name="Lab03Screen1" component={Lab03Screen1}></Stack.Screen> 
-                <Stack.Screen name="Lab03Screen2" component={Lab03Screen2}></Stack.Screen> 
-            </Stack.Navigator>
-     </NavigationContainer>
+    //  <NavigationContainer initialRouteName="Lab03Screen1">
+    //         <Stack.Navigator>     
+    //             <Stack.Screen name="Lab03Screen1" component={Lab03Screen1}></Stack.Screen> 
+    //             <Stack.Screen name="Lab03Screen2" component={Lab03Screen2}></Stack.Screen> 
+    //         </Stack.Navigator>
+    //  </NavigationContainer>
+
+
+    // This is exercise Lab04
+    // P1
+    // <NavigationContainer>
+    //     <Tab.Navigator initialRouteName="Chat" screenOptions={{tabBarStyle: {backgroundColor: '#1BA9FF'} ,tabBarActiveTintColor: "black", tabBarShowLabel: false}}>
+    //       <Tab.Screen name="Chat" component={Chat} options={{tabBarLabel: 'Chat', tabBarIcon: ({color}) => 
+    //       (<MaterialCommunityIcons name="home" color={color} size={45}/>),}}></Tab.Screen>
+
+    //       <Tab.Screen name="Products" component={Products} options={{tabBarLabel: 'Products', tabBarIcon: ({color}) => 
+    //         (<MaterialCommunityIcons name="arrow-left-top" color={color} size={45}/>),}}></Tab.Screen>
+    //       </Tab.Navigator>
+    //   </NavigationContainer>
+
+    // This is exercise Lab05
+    <NavigationContainer initialRouteName='Screen01'>
+        <Stack.Navigator>
+          <Stack.Screen name='Screen01' component={Screen01}></Stack.Screen>
+          <Stack.Screen name='Screen02' component={Screen02}></Stack.Screen>
+          <Stack.Screen name='Screen03' component={Screen03}></Stack.Screen>
+        </Stack.Navigator>
+    </NavigationContainer>
+    
+      
   );
 }
 
