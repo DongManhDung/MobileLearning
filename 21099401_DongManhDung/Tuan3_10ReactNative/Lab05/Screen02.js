@@ -79,7 +79,6 @@ const Screen02 = ({navigation}) => {
 
             <View style={style.productContainer}>
                 <View style={style.productFlud}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Screen03')}>
                             {/* Component here */}
                             <FlatList 
                                 data={Data}
@@ -90,8 +89,6 @@ const Screen02 = ({navigation}) => {
                                 columnWrapperStyle={{ gap: 5}}
                             >
                             </FlatList>
-                    </TouchableOpacity>
-                    
                 </View>
             </View>
         </View>

@@ -36,6 +36,12 @@ import Screen01 from './Lab05/Screen01.js';
 import Screen02 from './Lab05/Screen02.js';
 import Screen03 from './Lab05/Screen03.js';
 
+// Lab07
+import APIScreen01 from './Lab07/APIScreen01.js';
+import APIScreen02 from './Lab07/APIScreen02.js';
+import APIScreen03 from './Lab07/APIScreen03.js';
+import APIScreen04 from './Lab07/APIScreen04.js';
+
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
@@ -79,11 +85,21 @@ export default function App() {
     //   </NavigationContainer>
 
     // This is exercise Lab05
-    <NavigationContainer initialRouteName='Screen01'>
+    // <NavigationContainer initialRouteName='Screen01'>
+    //     <Stack.Navigator>
+    //       <Stack.Screen name='Screen01' component={Screen01}></Stack.Screen>
+    //       <Stack.Screen name='Screen02' component={Screen02}></Stack.Screen>
+    //       <Stack.Screen name='Screen03' component={Screen03}></Stack.Screen>
+    //     </Stack.Navigator>
+    // </NavigationContainer>
+
+    // This is exercise Lab07
+    <NavigationContainer initialRouteName='APIScreen01'>
         <Stack.Navigator>
-          <Stack.Screen name='Screen01' component={Screen01}></Stack.Screen>
-          <Stack.Screen name='Screen02' component={Screen02}></Stack.Screen>
-          <Stack.Screen name='Screen03' component={Screen03}></Stack.Screen>
+          <Stack.Screen name='APIScreen01' component={APIScreen01}></Stack.Screen>
+          <Stack.Screen name='APIScreen02' component={APIScreen02}></Stack.Screen>
+          <Stack.Screen name='APIScreen03' component={APIScreen03}></Stack.Screen>
+          <Stack.Screen name='APIScreen04' component={APIScreen04}></Stack.Screen>
         </Stack.Navigator>
     </NavigationContainer>
     
