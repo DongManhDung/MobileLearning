@@ -42,6 +42,10 @@ import APIScreen02 from './Lab07/APIScreen02.js';
 import APIScreen03 from './Lab07/APIScreen03.js';
 import APIScreen04 from './Lab07/APIScreen04.js';
 
+//Lab07_P2
+import MasterPorTrait from "./Lab07_P2/MasterPorTrait.js";
+import DetailPorTrait from "./Lab07_P2/DetailPorTrait.js";
+
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
@@ -94,14 +98,24 @@ export default function App() {
     // </NavigationContainer>
 
     // This is exercise Lab07
-    <NavigationContainer initialRouteName='APIScreen01'>
-        <Stack.Navigator>
-          <Stack.Screen name='APIScreen01' component={APIScreen01}></Stack.Screen>
-          <Stack.Screen name='APIScreen02' component={APIScreen02}></Stack.Screen>
-          <Stack.Screen name='APIScreen03' component={APIScreen03}></Stack.Screen>
-          <Stack.Screen name='APIScreen04' component={APIScreen04}></Stack.Screen>
-        </Stack.Navigator>
+    // <NavigationContainer initialRouteName='APIScreen01'>
+    //     <Stack.Navigator>
+    //       <Stack.Screen name='APIScreen01' component={APIScreen01}></Stack.Screen>
+    //       <Stack.Screen name='APIScreen02' component={APIScreen02}></Stack.Screen>
+    //       <Stack.Screen name='APIScreen03' component={APIScreen03}></Stack.Screen>
+    //       <Stack.Screen name='APIScreen04' component={APIScreen04}></Stack.Screen>
+    //     </Stack.Navigator>
+    // </NavigationContainer>
+
+    //This is exercise Lab07_P2
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="MasterPorTrait">
+        <Stack.Screen name="MasterPorTrait" component={MasterPorTrait} />
+        <Stack.Screen name="DetailPorTrait" component={DetailPorTrait} />
+      </Stack.Navigator>
     </NavigationContainer>
+
+
     
       
   );
