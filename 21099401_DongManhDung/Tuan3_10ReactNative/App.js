@@ -46,6 +46,11 @@ import APIScreen04 from './Lab07/APIScreen04.js';
 import MasterPorTrait from "./Lab07_P2/MasterPorTrait.js";
 import DetailPorTrait from "./Lab07_P2/DetailPorTrait.js";
 
+//Lab08 On Tap API + Filter
+import Lab8Screen1 from './Lab08_OnTapAPI/Lab8Screen1.js';
+import Lab8Screen2 from './Lab08_OnTapAPI/Lab8Screen2.js';
+import Lab8Screen3 from './Lab08_OnTapAPI/Lab8Screen3.js';
+
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
@@ -108,13 +113,21 @@ export default function App() {
     // </NavigationContainer>
 
     //This is exercise Lab07_P2
+    // <NavigationContainer>
+    //   <Stack.Navigator initialRouteName="MasterPorTrait">
+    //     <Stack.Screen name="MasterPorTrait" component={MasterPorTrait} />
+    //     <Stack.Screen name="DetailPorTrait" component={DetailPorTrait} />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
+
+    // This is exercise Lab08 On Tap API + Filter
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="MasterPorTrait">
-        <Stack.Screen name="MasterPorTrait" component={MasterPorTrait} />
-        <Stack.Screen name="DetailPorTrait" component={DetailPorTrait} />
+      <Stack.Navigator initialRouteName="Lab8Screen1">
+        <Stack.Screen name="Lab8Screen1" component={Lab8Screen1} />
+        <Stack.Screen name="Lab8Screen2" component={Lab8Screen2} />
+        <Stack.Screen name="Lab8Screen3" component={Lab8Screen3} />
       </Stack.Navigator>
     </NavigationContainer>
-
 
     
       
