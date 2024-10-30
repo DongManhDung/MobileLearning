@@ -82,7 +82,7 @@ import {
             }}>
             <TextInput
               value={title}
-              placeholder="Enter your job"
+              placeholder="Add your new job here..."
               style={{ height: '100%', outlineStyle: 'none' }}
               onChangeText={(text) => setTitle(text)}
             />
@@ -92,7 +92,7 @@ import {
           onPress={updateId ? handleUpdate : handleCreate}
           style={{width: '20%', backgroundColor: 'cyan', alignItems: 'center', justifyContent: 'center', height: 31, borderRadius: 5 }}
           >
-                <Text>{updateId ? 'Update' : 'Create'}</Text>
+                <Text style={{fontSize: 17}}>{updateId ? 'Update' : 'Create'}</Text>
           </TouchableOpacity>
         </View>
   
@@ -113,7 +113,7 @@ import {
           />
         ) : (
           <View>
-            <Text>Not job for to day</Text>
+            <Text>Not job for today</Text>
           </View>
         )}
       </View>
