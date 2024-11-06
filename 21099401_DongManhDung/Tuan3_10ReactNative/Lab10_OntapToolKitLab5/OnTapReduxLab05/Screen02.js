@@ -12,7 +12,7 @@ const ItemConponent = ({item, navigation}) => {
                         <TouchableOpacity style={{width: 60, height: 50, backgroundColor: 'transparent', position: 'absolute', zIndex: 1}}>
                             <FontAwesomeIcon name='heart' size={25} style={{paddingHorizontal: 10, paddingVertical: 5}}></FontAwesomeIcon>
                         </TouchableOpacity>
-                        <Image style={{width: '100%', height:'70%', objectFit: 'contain'}} source={item.image}></Image>
+                        <Image style={{width: '100%', height:'70%', objectFit: 'contain'}} source={{url: item.image}}></Image>
                         <Text style={{textAlign:'center', fontSize: 22, fontFamily: 'Voltaire'}}>{item.name}</Text>
                         <Text style={{textAlign:'center', fontSize: 22}}><Text style={{color: "#F7BA83"}}>$</Text> {item.price}</Text>
                     </TouchableOpacity>
@@ -82,6 +82,11 @@ const Screen02 = ({navigation}) => {
                     )}
                 </View>
             </View>
+
+            <TouchableOpacity style={{width: '95%', height: 50, backgroundColor: 'cyan', 
+                justifyContent: 'center', alignItems: 'center', borderRadius: 10}}>
+                <Text style={{fontSize: 20}}>Switch to Admin page</Text>
+            </TouchableOpacity>
         </View>
         </ScrollView>
     );
@@ -123,6 +128,8 @@ const style = StyleSheet.create({
         width: '100%',
         height: 1000,
         backgroundColor: '#fff',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     component80Container: {
         width: '100%',
